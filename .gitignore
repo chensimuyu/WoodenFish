@@ -15,5 +15,9 @@ run/
 /src/.DS_Store
 /src/*.swp
 
+/fe/blog/npm-debug.log
+/fe/blog/yarn-debug.log*
+/fe/blog/yarn-error.log*
+/fe/blog/node_modules/
 
 
