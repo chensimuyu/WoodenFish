@@ -10,7 +10,7 @@ export const rootPath = (sysName) => {
   let path = '/api'
 
   if (process.env.NODE_ENV === 'production') {
-    path = 'http://' + sysName + bmdsEnv + '.maimaiche.com/api'
+    path = 'http://' + sysName + bmdsEnv + '.91csmy.com/api'
   }
   return path
 }

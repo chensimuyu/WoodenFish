@@ -342,7 +342,7 @@ let codesData = Mock.mock({
         "children": [{
             "key": "026010001",
             "name": "用户转化",
-            "url": "/zuche/dataShow",
+            "url": "/zc/dataShow",
             "extra": null,
             "order": 1,
             "children": []
@@ -350,7 +350,7 @@ let codesData = Mock.mock({
             {
                 "key": "026010002",
                 "name": "spark任务",
-                "url": "/zuche/sparkTask",
+                "url": "/zc/sparkTask",
                 "extra": null,
                 "order": 2,
                 "children": []
@@ -397,12 +397,10 @@ let codesData = Mock.mock({
 
 
 module.exports = {
-    '/ucartemple/user/login': function (req, res) {
+    '/temple/user/login': function (req, res) {
         // const userItem = req.body;
         let result = true;
-        // if (userItem.emailType == 'ucarinc' && userItem.username == 'admin' && userItem.password == 'admin') {
-        //     result = true
-        // }
+
         const response = {
             success: result,
             data: {username: 'guest', userRole: 1, userId: 1, infoComplete: false},
@@ -411,7 +409,7 @@ module.exports = {
         res.json(response)
     },
 
-    '/ucartemple/menu/treeList': function (req, res) {
+    '/temple/menu/treeList': function (req, res) {
         // const page = qs.parse(req.query);
         res.json({
             success: true,
